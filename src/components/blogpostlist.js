@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { fetchBlogposts } from "../actions/blogpostActions";
+import {fetchBlogpost, fetchBlogposts} from "../actions/blogpostActions";
 import { setBlogpost } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Image, Nav} from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import { BsStarFill} from 'react-icons/bs'
 import {LinkContainer} from 'react-router-bootstrap';
+import blogpost from "./blogpost";
 
 class BlogpostList extends Component {
     constructor(props) {
@@ -15,37 +16,37 @@ class BlogpostList extends Component {
 
     componentDidMount() {
         const {dispatch} = this.props;
-        dispatch(fetchMovies());
+        dispatch(fetchBlogposts());
     }
 
     handleSelect(selectedIndex, e) {
         const {dispatch} = this.props;
-        dispatch(setMovie(this.props.movies[selectedIndex]));
+        dispatch(setBlogpost(this.props.blogposts[selectedIndex]));
     }
 
-    handleClick = (movie) => {
+    handleClick = (blogpost) => {
         const {dispatch} = this.props;
-        dispatch(setMovie(movie));
+        dispatch(setBlogpost(blogpost));
     }
 
     render() {
-        const MovieListCarousel = ({movieList}) => {
-            if (!movieList) {
+        const BlogpostListCarousel = ({blogpostList}) => {
+            if (!blogpostList) {
                 return <div>Loading....</div>
             }
 
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    {movieList.map((movie) =>
-                        <Carousel.Item key={movie.title}>
+                    {blogpostList.map((blogpost) =>
+                        <Carousel.Item key={blogpost.title}>
                             <div>
-                                <LinkContainer to={'/movie/'+movie.title} onClick={()=>this.handleClick(movie)}>
-                                    <Nav.Link><Image className="image" src={movie.imageURL} thumbnail /></Nav.Link>
+                                <LinkContainer to={'/blogpost/'+blogpost.title} onClick={()=>this.handleClick(blogpost)}>
+                                    <Nav.Link><Image className="image" src={blogpost.imageURL} thumbnail /></Nav.Link>
                                 </LinkContainer>
                             </div>
                             <Carousel.Caption>
-                                <h3>{movie.title}</h3>
-                                <BsStarFill glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.releaseDate}
+                                <h3>{blogpost.title}</h3>
+                                <BsStarFill glyph={'star'} /> {blogpost.avgRating} &nbsp;&nbsp; {blogpost.releaseDate}
                             </Carousel.Caption>
                         </Carousel.Item>
                     )}
@@ -55,15 +56,15 @@ class BlogpostList extends Component {
         }
 
         return (
-            <MovieListCarousel movieList={this.props.movies} />
+            <BlogpostListCarousel blogpostList={this.props.blogposts} />
         )
     }
 }
 
 const mapStateToProps = state => {
     return {
-        movies: state.movie.movies
+        blogposts: state.blogpost.blogposts
     }
 }
 
-export default connect(mapStateToProps)(MovieList);
+export default connect(mapStateToProps)(BlogpostList);
