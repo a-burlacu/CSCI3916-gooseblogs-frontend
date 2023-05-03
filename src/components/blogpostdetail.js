@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { fetchMovie, submitReview } from "../actions/blogpostActions";
+import { fetchBlogpost, submitComment } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Card, ListGroup, ListGroupItem, Form, Button } from 'react-bootstrap';
 import { BsStarFill } from 'react-icons/bs'
 import { Image } from 'react-bootstrap';
 
-class Blogpostdetail extends Component {
+class BlogpostDetail extends Component {
     constructor(props){
         super(props);
 
@@ -118,4 +118,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(Blogpostdetail);
+export default connect(mapStateToProps)(BlogpostDetail);
