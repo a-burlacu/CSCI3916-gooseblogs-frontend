@@ -40,7 +40,7 @@ export function setBlogpost(blogpost) {
 export function fetchBlogpost(blogpostID) {
 
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/movies/${blogpostID}?comments=true`, {
+        return fetch(`${env.REACT_APP_API_URL}/blogposts/${blogpostID}?comments=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
