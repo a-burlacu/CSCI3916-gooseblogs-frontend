@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { fetchMovies } from "../actions/movieActions";
-import { setMovie } from "../actions/movieActions";
+import { fetchBlogposts } from "../actions/blogpostActions";
+import { setBlogpost } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Image, Nav} from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import { BsStarFill} from 'react-icons/bs'
 import {LinkContainer} from 'react-router-bootstrap';
 
-class MovieList extends Component {
+class BlogpostList extends Component {
     constructor(props) {
         super(props);
         this.handleSelect = this.handleSelect.bind(this);
