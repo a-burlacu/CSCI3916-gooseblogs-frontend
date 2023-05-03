@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import {fetchBlogpost, fetchBlogposts} from "../actions/blogpostActions";
+import {fetchBlogposts} from "../actions/blogpostActions";
 import { setBlogpost } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Image, Nav} from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import { BsStarFill} from 'react-icons/bs'
 import {LinkContainer} from 'react-router-bootstrap';
-import blogpost from "./blogpost";
 
 class BlogpostList extends Component {
     constructor(props) {
