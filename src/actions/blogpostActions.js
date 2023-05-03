@@ -37,10 +37,10 @@ export function setBlogpost(blogpost) {
 }
 
 
-export function fetchBlogpost(blogpostID) {
-
+export function fetchBlogpost(blogpostTitle) {
+// blogpostTitle = movieID originally
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/blogposts/${blogpostID}?comments=true`, {
+        return fetch(`${env.REACT_APP_API_URL}/blogposts/${blogpostTitle}?comments=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -103,10 +103,10 @@ export function submitComment(data) {
         }).then((res) => {
             console.log("response", res);
             dispatch(commentSet(res));
-            localStorage.setItem('blogpostID', data.blogpostID);
+            localStorage.setItem('blogpostTitle', data.blogpostTitle);
             localStorage.setItem('username', data.username);
             localStorage.setItem('quote', data.quote);
-            dispatch(fetchBlogpost(data.blogpostID));
+            dispatch(fetchBlogpost(data.blogpostTitle));
         }).catch((e) => console.log(e));
     }
 }
