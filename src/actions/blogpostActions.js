@@ -77,7 +77,7 @@ export function fetchBlogposts() {
             }
             return response.json()
         }).then((res) => {
-            dispatch(blogpostFetched(res));
+            dispatch(blogpostsFetched(res));
         }).catch((e) => console.log(e));
     }
 }
