@@ -61,7 +61,7 @@ class BlogpostDetail extends Component {
             <Card>
                 <Card.Header>Blogpost Detail</Card.Header>
                 <Card.Body>
-                    <Image className="image" src={this.props.selectedBlogpost.imageUrl} thumbnail />
+                    <Image className="image" src={this.props.selectedBlogpost.imageURL} thumbnail />
                 </Card.Body>
                 <ListGroup>
                     <ListGroupItem>{this.props.selectedBlogpost.title}</ListGroupItem>

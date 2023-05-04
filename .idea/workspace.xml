@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="updated README with new links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683138241709</updated>
       <workItem from="1683138242964" duration="1712000" />
+      <workItem from="1683225935114" duration="1942000" />
     </task>
     <task id="LOCAL-00003" summary="uppdated login/register">
       <created>1683140748162</created>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683184707940</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated README with new links">
+      <created>1683188934027</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683188934027</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

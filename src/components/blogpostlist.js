@@ -40,7 +40,7 @@ class BlogpostList extends Component {
                         <Carousel.Item key={blogpost.title}>
                             <div>
                                 <LinkContainer to={'/blogpost/'+blogpost.title} onClick={()=>this.handleClick(blogpost)}>
-                                    <Nav.Link><Image className="image" src={blogpost.imageUrl} thumbnail /></Nav.Link>
+                                    <Nav.Link><Image className="image" src={blogpost.imageURL} thumbnail /></Nav.Link>
                                 </LinkContainer>
                             </div>
                             <Carousel.Caption>

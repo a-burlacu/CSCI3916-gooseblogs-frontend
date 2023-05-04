@@ -19,7 +19,7 @@ class BlogpostHeader extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
-                            <LinkContainer to="/blogpostList">
+                            <LinkContainer to="/blogpostlist">
                                 <Nav.Link disabled={!this.props.loggedIn}>Blogpost List</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to={'/blogpost/' + (this.props.selectedBlogpost ? this.props.selectedBlogpost.title : '')}>
