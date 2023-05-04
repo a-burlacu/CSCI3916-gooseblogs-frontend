@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="updated REACT_APP_API_URI in env">
+    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="updated README with new links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683178336031</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated README with new links">
+      <created>1683184707940</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683184707940</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +137,7 @@
     <MESSAGE value="updated blogpostlist" />
     <MESSAGE value="updated blogpostdetail" />
     <MESSAGE value="updated REACT_APP_API_URI in env" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated REACT_APP_API_URI in env" />
+    <MESSAGE value="updated README with new links" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README with new links" />
   </component>
 </project>
