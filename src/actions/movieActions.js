@@ -1,6 +1,5 @@
 import actionTypes from '../constants/actionTypes';
 import runtimeEnv from '@mars/heroku-js-runtime-env'
-import blogpost from "../components/blogpost";
 const env = process.env;
 
 function blogpostsFetched(blogposts) {
