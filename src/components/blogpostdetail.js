@@ -100,6 +100,7 @@ class BlogpostDetail extends Component {
                         {/*            Stars </Form.Label>*/}
                         {/*    </div>*/}
                         {/*</Form.Group>*/}
+                        {console.log("imageURL", this.state.selectedBlogpost.imageURL)}
                         {console.log("blogpost", this.state.details.blogpostTitle)}
                         {console.log("username", this.state.details.username)}
                         {console.log("quote", this.state.details.quote)}
