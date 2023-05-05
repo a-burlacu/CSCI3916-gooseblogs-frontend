@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="renamed vars">
-      <change afterPath="$PROJECT_DIR$/src/components/createblogpost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/blogpostActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/blogpostActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blogpostheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogpostheader.js" afterDir="false" />
     </list>
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="Changes by Alina" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683264730313</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="renamed vars">
+      <created>1683267570579</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683267570579</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

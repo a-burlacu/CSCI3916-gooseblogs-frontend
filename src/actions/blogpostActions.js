@@ -19,7 +19,7 @@ function blogpostFetched(blogpost) {
 export function blogpostSet(blogpost) {
     return {
         type: actionTypes.SET_BLOGPOST,
-        blogpost: blogpost
+        selectedBlogpost: blogpost
     }
 }
 
@@ -136,7 +136,7 @@ export function createBlogpost(details) {
             localStorage.setItem('username', details.username);
             localStorage.setItem('postBody', details.postBody);
             localStorage.setItem('imageUrl', details.imageUrl);
-            dispatch(blogpostFetched(details.title));
+            dispatch(fetchBlogpost(details.blogpostTitle));
         }).catch((e) => console.log(e));
     }
 }
