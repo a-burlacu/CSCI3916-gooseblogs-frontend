@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import { fetchBlogpost } from "../actions/movieActions";
-import BlogpostDetail from "../components/moviedetail"
+import { fetchBlogpost } from "../actions/blogpostActions";
+import BlogpostDetail from "./blogpostdetail"
 
 // support routing
 

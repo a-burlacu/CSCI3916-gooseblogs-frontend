@@ -5,7 +5,7 @@ let initialState = {
       selectedBlogpost: null
 }
 
-const movieReducer = (state = initialState, action) => {
+const blogpostReducer = (state = initialState, action) => {
       let updated = Object.assign({}, state);
 
       switch(action.type) {
@@ -24,4 +24,4 @@ const movieReducer = (state = initialState, action) => {
       }
 }
 
-export default movieReducer;
+export default blogpostReducer;

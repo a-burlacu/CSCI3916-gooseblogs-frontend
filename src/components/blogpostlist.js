@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { fetchBlogposts } from "../actions/movieActions";
-import { setBlogpost } from "../actions/movieActions";
+import { fetchBlogposts } from "../actions/blogpostActions";
+import { setBlogpost } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Image, Nav} from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';

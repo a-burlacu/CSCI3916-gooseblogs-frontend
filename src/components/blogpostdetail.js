@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchBlogpost, submitComment } from "../actions/movieActions";
+import { fetchBlogpost, submitComment } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Card, ListGroup, ListGroupItem, Form, Button } from 'react-bootstrap';
 import { BsStarFill } from 'react-icons/bs'
@@ -53,7 +53,7 @@ class BlogpostDetail extends Component {
 
     render() {
 
-        if (!this.props.selectedMovie) {
+        if (!this.props.selectedBlogpost) {
             return <div>Loading....</div>
         }
 
@@ -61,7 +61,7 @@ class BlogpostDetail extends Component {
             <Card>
                 <Card.Header>Blogpost Detail</Card.Header>
                 <Card.Body>
-                    <Image className="image" src={this.props.selectedMovie.imageURL} thumbnail />
+                    <Image className="image" src={this.props.selectedBlogpost.imageURL} thumbnail />
                 </Card.Body>
                 <ListGroup>
                     <ListGroupItem>{this.props.selectedBlogpost.title}</ListGroupItem>
@@ -85,8 +85,8 @@ class BlogpostDetail extends Component {
                     )}
                     <Form className='form-horizontal'>
                         <Form.Group controlId="quote">
-                            <Form.Label>Leave a Review:</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.quote} type="text" placeholder="Review" />
+                            <Form.Label>Leave a Comment:</Form.Label>
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.quote} type="text" placeholder="Comment" />
                         </Form.Group>
 
                         {/*<Form.Group controlId="rating">*/}
@@ -103,7 +103,7 @@ class BlogpostDetail extends Component {
                         {console.log("blogpost", this.state.details.blogpostTitle)}
                         {console.log("username", this.state.details.username)}
                         {console.log("quote", this.state.details.quote)}
-                        {console.log("rating", this.state.details.rating)}
+
                         <Button onClick={this.submit}>Submit</Button>
                     </Form>
                 </Card.Body>
@@ -114,7 +114,7 @@ class BlogpostDetail extends Component {
 
 const mapStateToProps = state => {
     return {
-        selectedMovie: state.movie.selectedMovie
+        selectedBlogpost: state.blogpost.selectedBlogpost
     }
 }
 

@@ -14,16 +14,16 @@ class BlogpostHeader extends Component {
             <div>
                 <Navbar expand="lg" bg="dark" variant="dark">
                     <Navbar.Brand>
-                        Movie App
+                        GOOSE BLOGS
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav>
-                            <LinkContainer to="/movielist">
-                                <Nav.Link disabled={!this.props.loggedIn}>Movie List</Nav.Link>
+                            <LinkContainer to="/blogpostlist">
+                                <Nav.Link disabled={!this.props.loggedIn}>Blogpost List</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to={'/movie/' + (this.props.selectedMovie ? this.props.selectedMovie.title : '')}>
-                                <Nav.Link disabled={!this.props.loggedIn}>Movie Detail</Nav.Link>
+                            <LinkContainer to={'/blogpost/' + (this.props.selectedBlogpost ? this.props.selectedBlogpost.title : '')}>
+                                <Nav.Link disabled={!this.props.loggedIn}>Blogpost Detail</Nav.Link>
                             </LinkContainer>
                             <LinkContainer to="/signin">
                                 <Nav.Link>{this.props.loggedIn ? <button onClick={this.logout.bind(this)}>Logout</button> : 'Login'}</Nav.Link>
@@ -40,7 +40,7 @@ const mapStateToProps = state => {
     return {
         loggedIn : state.auth.loggedIn,
         username : state.auth.username,
-        selectedMovie: state.movie.selectedMovie
+        selectedBlogpost: state.blogpost.selectedBlogpost
     }
 }
 

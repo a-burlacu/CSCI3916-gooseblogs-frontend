@@ -1,12 +1,12 @@
 import actionTypes from '../constants/actionTypes';
 import runtimeEnv from '@mars/heroku-js-runtime-env'
-import blogpost from "../components/blogpost";
+
 const env = process.env;
 
 function blogpostsFetched(blogposts) {
     return {
-        type: actionTypes.FETCH_MOVIES,
-        movies: movies
+        type: actionTypes.FETCH_BLOGPOSTS,
+        blogposts: blogposts
     }
 }
 
@@ -17,10 +17,10 @@ function blogpostFetched(blogpost) {
     }
 }
 
-function movieSet(movie) {
+function blogpostSet(blogpost) {
     return {
-        type: actionTypes.SET_MOVIE,
-        selectedMovie: movie
+        type: actionTypes.SET_BLOGPOST,
+        selectedBlogpost: blogpost
     }
 }
 
@@ -31,9 +31,9 @@ export function commentSet(comment) {
     }
 }
 
-export function setMovie(movie) {
+export function setBlogpost(blogpost) {
     return dispatch => {
-        dispatch(movieSet(movie));
+        dispatch(blogpostSet(blogpost));
     }
 }
 
@@ -41,7 +41,7 @@ export function setMovie(movie) {
 export function fetchBlogpost(title) {
 
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/movies/${movieID}?reviews=true`, {
+        return fetch(`${env.REACT_APP_API_URL}/blogposts/${title}?comments=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -64,7 +64,7 @@ export function fetchBlogpost(title) {
 export function fetchBlogposts() {
 
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/movies?reviews=true`, {
+        return fetch(`${env.REACT_APP_API_URL}/blogposts?comments=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
