@@ -16,7 +16,7 @@ function blogpostFetched(blogpost) {
     }
 }
 
-function movieSet(blogpost) {
+function blogpostSet(blogpost) {
     return {
         type: actionTypes.SET_BLOGPOST,
         selectedMovie: blogpost
@@ -32,7 +32,7 @@ export function commentSet(comment) {
 
 export function setBlogpost(blogpost) {
     return dispatch => {
-        dispatch(movieSet(blogpost));
+        dispatch(blogpostSet(blogpost));
     }
 }
 
@@ -52,7 +52,7 @@ export function fetchBlogpost(blogpostTitle) {
             if (!response.ok) {
                 throw Error(response.statusText);
             }
-            //console.log("response.json", response.json());
+            console.log("response.json", response.json());
             return response.json()
         }).then((res) => {
             dispatch(blogpostFetched(res[0]));
