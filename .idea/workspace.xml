@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="renamed files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/blogpostActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/blogpostActions.js" afterDir="false" />
     </list>
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
