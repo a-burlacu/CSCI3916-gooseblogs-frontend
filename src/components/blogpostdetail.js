@@ -79,7 +79,7 @@ class BlogpostDetail extends Component {
                 <Card.Body>
                     {this.props.selectedBlogpost?.blogpostComments?.map((comment, i) =>
                         <p key={i}>
-                            <b>{comment.name}</b>&nbsp; {comment.quote}
+                            <b>{comment.username}</b>&nbsp; {comment.quote}
                             {/*&nbsp;  <BsStarFill /> {comment.rating}*/}
                         </p>
                     )}
