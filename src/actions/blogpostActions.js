@@ -19,7 +19,7 @@ function blogpostFetched(blogpost) {
 function blogpostSet(blogpost) {
     return {
         type: actionTypes.SET_BLOGPOST,
-        selectedMovie: blogpost
+        selectedBlogpost: blogpost
     }
 }
 
