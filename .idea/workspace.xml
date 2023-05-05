@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="working on displaying blogposts on react site">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/blogpostActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/blogpostActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/moviedetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/moviedetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movieheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movieheader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movielist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movielist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/movieReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movieReducer.js" afterDir="false" />
-    </list>
+    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="" />
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
@@ -37,81 +25,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/reducers/movieReducer.js">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="5" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="7" end1="8" start2="7" end2="8" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="11" end1="14" start2="11" end2="14" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="15" end1="17" start2="15" end2="17" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="18" end1="20" start2="18" end2="20" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="26" end1="27" start2="26" end2="27" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/actions/movieActions.js">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="4" end1="5" start2="5" end2="6" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="6" end1="8" start2="7" end2="9" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="11" end1="12" start2="12" end2="13" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="13" end1="15" start2="14" end2="16" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="18" end1="19" start2="19" end2="20" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="20" end1="22" start2="21" end2="23" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="25" end1="26" start2="26" end2="27" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="27" end1="29" start2="28" end2="30" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="32" end1="33" start2="33" end2="34" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="34" end1="35" start2="35" end2="36" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="39" end1="40" start2="40" end2="41" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="42" end1="43" start2="43" end2="44" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="57" end1="58" start2="58" end2="59" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="62" end1="63" start2="63" end2="64" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="65" end1="66" start2="66" end2="67" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="79" end1="80" start2="80" end2="81" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="84" end1="85" start2="85" end2="86" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="87" end1="88" start2="88" end2="89" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="104" end1="110" start2="105" end2="110" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/components/moviedetail.js">
-      <ranges>
-        <range start1="1" end1="2" start2="1" end2="2" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="7" end1="8" start2="7" end2="8" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="13" end1="14" start2="13" end2="14" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="18" end1="20" start2="18" end2="19" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="35" end1="37" start2="34" end2="36" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="42" end1="43" start2="41" end2="42" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="45" end1="53" start2="44" end2="52" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="56" end1="57" start2="55" end2="56" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="62" end1="63" start2="61" end2="62" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="64" end1="65" start2="63" end2="64" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="67" end1="77" start2="66" end2="77" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="79" end1="80" start2="79" end2="80" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="81" end1="83" start2="81" end2="83" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="87" end1="89" start2="87" end2="89" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="91" end1="104" start2="91" end2="104" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="105" end1="106" start2="105" end2="106" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="116" end1="117" start2="116" end2="117" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="120" end1="121" start2="120" end2="121" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/components/movieheader.js">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-        <range start1="16" end1="17" start2="16" end2="17" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="21" end1="23" start2="21" end2="23" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="24" end1="26" start2="24" end2="26" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="42" end1="43" start2="42" end2="43" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="46" end1="47" start2="46" end2="47" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/App.js">
-      <ranges>
-        <range start1="2" end1="5" start2="2" end2="5" changelist="46bc43cd-5d11-42ac-b65b-677082821309" />
-        <range start1="16" end1="20" start2="16" end2="20" changelist="18888df1-c9f6-4d39-8ae5-81cd8885422c" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -226,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683230021743</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="working on displaying blogposts on react site">
+      <created>1683257600235</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683257600235</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
