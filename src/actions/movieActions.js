@@ -1,18 +1,19 @@
 import actionTypes from '../constants/actionTypes';
 import runtimeEnv from '@mars/heroku-js-runtime-env'
+import blogpost from "../components/blogpost";
 const env = process.env;
 
-function moviesFetched(movies) {
+function blogpostsFetched(blogposts) {
     return {
         type: actionTypes.FETCH_MOVIES,
         movies: movies
     }
 }
 
-function movieFetched(movie) {
+function blogpostFetched(blogpost) {
     return {
-        type: actionTypes.FETCH_MOVIE,
-        selectedMovie: movie
+        type: actionTypes.FETCH_BLOGPOST,
+        selectedBlogpost: blogpost
     }
 }
 
@@ -23,10 +24,10 @@ function movieSet(movie) {
     }
 }
 
-export function reviewSet(review) {
+export function commentSet(comment) {
     return {
-        type: actionTypes.SET_REVIEW,
-        review: review
+        type: actionTypes.SET_COMMENT,
+        comment: comment
     }
 }
 
@@ -37,7 +38,7 @@ export function setMovie(movie) {
 }
 
 
-export function fetchMovie(movieID) {
+export function fetchBlogpost(title) {
 
     return dispatch => {
         return fetch(`${env.REACT_APP_API_URL}/movies/${movieID}?reviews=true`, {
@@ -55,12 +56,12 @@ export function fetchMovie(movieID) {
             //console.log("response.json", response.json());
             return response.json()
         }).then((res) => {
-            dispatch(movieFetched(res[0]));
+            dispatch(blogpostFetched(res[0]));
         }).catch((e) => console.log(e));
     }
 }
 
-export function fetchMovies() {
+export function fetchBlogposts() {
 
     return dispatch => {
         return fetch(`${env.REACT_APP_API_URL}/movies?reviews=true`, {
@@ -77,15 +78,15 @@ export function fetchMovies() {
             }
             return response.json()
         }).then((res) => {
-            dispatch(moviesFetched(res));
+            dispatch(blogpostsFetched(res));
         }).catch((e) => console.log(e));
     }
 }
 
-export function submitReview(data) {
+export function submitComment(data) {
 
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/review`, {
+        return fetch(`${env.REACT_APP_API_URL}/comment`, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -102,12 +103,11 @@ export function submitReview(data) {
             return response.json()
         }).then((res) => {
             console.log("response", res);
-            dispatch(reviewSet(res));
-            localStorage.setItem('movieID', data.movieID);
-            localStorage.setItem('name', data.name);
-            localStorage.setItem('review', data.quote);
-            localStorage.setItem('rating', data.rating);
-            dispatch(fetchMovie(data.movieID));
+            dispatch(commentSet(res));
+            localStorage.setItem('blogpostTitle', data.blogpostTitle);
+            localStorage.setItem('username', data.username);
+            localStorage.setItem('quote', data.quote);
+            dispatch(fetchBlogpost(data.blogpostTitle));
         }).catch((e) => console.log(e));
     }
 }

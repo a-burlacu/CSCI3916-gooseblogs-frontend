@@ -15,3 +15,20 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+/*
+
+STORE -> global state
+
+ACTIONS -> an action that can be done by user
+
+REDUCER -> handles how actions are done and updates the store (state)
+
+DISPATCH -> when user does action, it sends it to the reducer
+
+action->dispatch->reducer->state
+
+
+ */

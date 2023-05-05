@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import { fetchMovie } from "../actions/movieActions";
-import MovieDetail from "../components/moviedetail"
+import { fetchBlogpost } from "../actions/movieActions";
+import BlogpostDetail from "../components/moviedetail"
 
 // support routing
 
-function Movie(props) {
-    const [selectedMovie] = useState(props.selectedMovie);
+function Blogpost(props) {
+    const [selectedBlogpost] = useState(props.selectedBlogpost);
     const params = useParams();
     const title = params.title;
     console.log(title);
     const dispatch = useDispatch();
-    if (selectedMovie == null) {
-        dispatch(fetchMovie(title));
+    if (selectedBlogpost == null) {
+        dispatch(fetchBlogpost(title));
     }
 
-    return (<MovieDetail title={title} />)
+    return (<BlogpostDetail title={title} />)
 }
 
-export default Movie;
+export default Blogpost;

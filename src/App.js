@@ -14,10 +14,10 @@ function App() {
             <Provider store={store}>
                 <HashRouter>
                     <div>
-                        <MovieHeader />
-                        <Route exact path="/" render={()=><MovieList />}/>
-                        <Route exact path="/movielist" render={()=><MovieList />}/>
-                        <Route exact path="/movie/:title" render={()=><Movie />}/>
+                        <BlogpostHeader />
+                        <Route exact path="/" render={()=><BlogpostList />}/>
+                        <Route exact path="/blogpostlist" render={()=><BlogpostList />}/>
+                        <Route exact path="/blogpost/:title" render={()=><Blogpost />}/>
                         <Route path="/signin" render={()=><Authentication />}/>
                     </div>
                 </HashRouter>

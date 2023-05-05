@@ -5,7 +5,7 @@ const env = process.env;
 function blogpostsFetched(blogposts) {
     return {
         type: actionTypes.FETCH_BLOGPOSTS,
-        movies: blogposts
+        blogposts: blogposts
     }
 }
 
@@ -38,7 +38,7 @@ export function setBlogpost(blogpost) {
 
 
 export function fetchBlogpost(blogpostTitle) {
-// blogpostTitle = movieID originally
+// blogpostTitle = blogpostTitle originally
     return dispatch => {
         return fetch(`${env.REACT_APP_API_URL}/blogposts/${blogpostTitle}?comments=true`, {
             method: 'GET',
