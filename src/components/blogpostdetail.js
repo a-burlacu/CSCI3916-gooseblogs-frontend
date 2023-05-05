@@ -15,7 +15,7 @@ class BlogpostDetail extends Component {
         this.state = {
             details:{
                 blogpostTitle: this.props.selectedBlogpost.title,
-                name: localStorage.getItem('username'),
+                username: localStorage.getItem('username'),
                 quote: ''
             }
         };
