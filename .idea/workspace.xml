@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="" />
+    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="renamed files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/blogpostActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/blogpostActions.js" afterDir="false" />
+    </list>
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/moviedetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/moviedetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movieheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movieheader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/movieReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movieReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683257859234</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="working on displaying blogposts on react site">
+      <created>1683258422849</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683258422849</updated>
+    </task>
+    <task id="LOCAL-00015" summary="renamed files">
+      <created>1683258933473</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683258933473</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +193,7 @@
     <MESSAGE value="updated REACT_APP_API_URI in env" />
     <MESSAGE value="updated README with new links" />
     <MESSAGE value="working on displaying blogposts on react site" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on displaying blogposts on react site" />
+    <MESSAGE value="renamed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed files" />
   </component>
 </project>
