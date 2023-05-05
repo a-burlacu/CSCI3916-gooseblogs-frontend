@@ -7,6 +7,7 @@ import Authentication from './components/authentication';
 import {HashRouter, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './stores/store';
+import CreateBlogpost from "./components/createblogpost";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <Route exact path="/" render={()=><BlogpostList />}/>
                         <Route exact path="/blogpostlist" render={()=><BlogpostList />}/>
                         <Route exact path="/blogpost/:title" render={()=><Blogpost />}/>
+                        <Route exact path="/createnewpost" render={()=><CreateBlogpost />}/>
                         <Route path="/signin" render={()=><Authentication />}/>
                     </div>
                 </HashRouter>

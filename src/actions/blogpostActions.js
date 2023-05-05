@@ -16,10 +16,10 @@ function blogpostFetched(blogpost) {
     }
 }
 
-function blogpostSet(blogpost) {
+export function blogpostSet(blogpost) {
     return {
         type: actionTypes.SET_BLOGPOST,
-        selectedBlogpost: blogpost
+        blogpost: blogpost
     }
 }
 
@@ -107,6 +107,36 @@ export function submitComment(data) {
             localStorage.setItem('username', data.username);
             localStorage.setItem('quote', data.quote);
             dispatch(fetchBlogpost(data.blogpostTitle));
+        }).catch((e) => console.log(e));
+    }
+}
+
+export function createBlogpost(details) {
+
+    return dispatch => {
+        return fetch(`${env.REACT_APP_API_URL}/blogposts`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': localStorage.getItem('token')
+            },
+            body: JSON.stringify(details),
+            mode: 'cors'
+        }).then((response) => {
+            console.log("response", response);
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
+            return response.json()
+        }).then((res) => {
+            console.log("response", res);
+            dispatch(commentSet(res));
+            localStorage.setItem('title', details.title);
+            localStorage.setItem('username', details.username);
+            localStorage.setItem('postBody', details.postBody);
+            localStorage.setItem('imageUrl', details.imageUrl);
+            dispatch(blogpostFetched(details.title));
         }).catch((e) => console.log(e));
     }
 }

@@ -25,6 +25,9 @@ class BlogpostHeader extends Component {
                             <LinkContainer to={'/blogpost/' + (this.props.selectedBlogpost ? this.props.selectedBlogpost.title : '')}>
                                 <Nav.Link disabled={!this.props.loggedIn}>Blogpost Detail</Nav.Link>
                             </LinkContainer>
+                            <LinkContainer to="/createnewpost">
+                                <Nav.Link disabled={!this.props.loggedIn}>Create New Post</Nav.Link>
+                            </LinkContainer>
                             <LinkContainer to="/signin">
                                 <Nav.Link>{this.props.loggedIn ? <button onClick={this.logout.bind(this)}>Logout</button> : 'Login'}</Nav.Link>
                             </LinkContainer>
