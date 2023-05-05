@@ -61,7 +61,7 @@ class BlogpostDetail extends Component {
             <Card>
                 <Card.Header>Blogpost Detail</Card.Header>
                 <Card.Body>
-                    <Image className="image" src={this.props.selectedBlogpost.imageURL} thumbnail />
+                    <Image className="image" src={this.props.selectedBlogpost.imageUrl} thumbnail />
                 </Card.Body>
                 <ListGroup>
                     <ListGroupItem>{this.props.selectedBlogpost.title}</ListGroupItem>
@@ -100,7 +100,7 @@ class BlogpostDetail extends Component {
                         {/*            Stars </Form.Label>*/}
                         {/*    </div>*/}
                         {/*</Form.Group>*/}
-                        {console.log("imageURL", this.state.selectedBlogpost.imageURL)}
+                        {console.log("imageURL", this.state.selectedBlogpost.imageUrl)}
                         {console.log("blogpost", this.state.details.blogpostTitle)}
                         {console.log("username", this.state.details.username)}
                         {console.log("quote", this.state.details.quote)}

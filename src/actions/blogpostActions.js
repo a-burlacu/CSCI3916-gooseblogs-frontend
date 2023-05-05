@@ -52,7 +52,7 @@ export function fetchBlogpost(blogpostTitle) {
             if (!response.ok) {
                 throw Error(response.statusText);
             }
-            console.log("response.json", response.json());
+            //console.log("response.json", response.json());
             return response.json()
         }).then((res) => {
             dispatch(blogpostFetched(res[0]));
