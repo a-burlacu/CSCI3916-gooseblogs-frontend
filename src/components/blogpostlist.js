@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import {fetchBlogposts} from "../actions/blogpostActions";
 import { setBlogpost } from "../actions/blogpostActions";
 import {connect} from 'react-redux';
-import {Image, Nav} from 'react-bootstrap';
+import {Button, Card, Image, Nav} from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import { BsStarFill} from 'react-icons/bs'
 import {LinkContainer} from 'react-router-bootstrap';
+import blogpost from "./blogpost";
 
 class BlogpostList extends Component {
     constructor(props) {
@@ -28,35 +29,34 @@ class BlogpostList extends Component {
         dispatch(setBlogpost(blogpost));
     }
 
+
     render() {
-        const BlogpostListCarousel = ({blogpostList}) => {
-            if (!blogpostList) {
-                return <div>Loading....</div>
-            }
+        if (!this.props.blogposts) {
+            return <div>Loading....</div>
+           }
+        return(
+            <Card>
+                <Card.Img variant={"top"} src={this.props.selectedBlogpost.imageURL} thumbnail />
+                <Card.Body>
+                    {this.props.selectedBlogpost?.blogposts?.map((post, i) =>{
 
-            return (
-                <Carousel onSelect={this.handleSelect}>
-                    {blogpostList.map((blogpost) =>
-                        <Carousel.Item key={blogpost.title}>
-                            <div>
-                                <LinkContainer to={'/blogpost/'+blogpost.title} onClick={()=>this.handleClick(blogpost)}>
-                                    <Nav.Link><Image className="image" src={blogpost.imageURL} thumbnail /></Nav.Link>
-                                </LinkContainer>
-                            </div>
-                            <Carousel.Caption>
-                                <h3>{blogpost.title}</h3>
-                                <BsStarFill glyph={'star'} /> {blogpost.username}
-                            </Carousel.Caption>
-                        </Carousel.Item>
+                        }
                     )}
-
-                </Carousel>
-            )
-        }
-
-        return (
-            <BlogpostListCarousel blogpostList={this.props.blogposts} />
+                </Card.Body>
+            </Card>
         )
+        const BlogpostListCard = (blogpost, index) => {
+            return (
+                <Card style={{width: '18rem'}} key={index}>
+                    <Card.Img variant="top" src={blogpost.imageURL}/>,
+                    <Card.Body>
+                        <Card.Title>{blogpost.title}</Card.Title>
+                        <Card.Text>{blogpost.username}</Card.Text>
+                        <Button variant={"primary"} onClick={() => this.handleClick(blogpost)}>View Post</Button>
+                    </Card.Body>
+                </Card>
+            );
+        };
     }
 }
 

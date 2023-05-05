@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import BlogpostHeader from './components/blogpostheader';
-import BlogpostList from './components/blogpostlist';
-import Blogpost from './components/blogpost';
+import MovieHeader from './components/movieheader';
+import MovieList from './components/movielist';
+import Movie from './components/movie';
 import Authentication from './components/authentication';
 import {HashRouter, Route} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './stores/store';
-// import BlogpostList from "./components/blogpostlist";
-// import BlogpostHeader from "./components/blogpostheader";
 
 function App() {
     return (
@@ -16,10 +14,10 @@ function App() {
             <Provider store={store}>
                 <HashRouter>
                     <div>
-                        <BlogpostHeader />
-                        <Route exact path="/" render={()=><BlogpostList />}/>
-                        <Route exact path="/blogpostlist" render={()=><BlogpostList />}/>
-                        <Route exact path="/blogpost/:title" render={()=><Blogpost />}/>
+                        <MovieHeader />
+                        <Route exact path="/" render={()=><MovieList />}/>
+                        <Route exact path="/movielist" render={()=><MovieList />}/>
+                        <Route exact path="/movie/:title" render={()=><Movie />}/>
                         <Route path="/signin" render={()=><Authentication />}/>
                     </div>
                 </HashRouter>
