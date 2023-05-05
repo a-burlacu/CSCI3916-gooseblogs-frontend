@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="renamed vars">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/blogpostActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/blogpostActions.js" afterDir="false" />
-    </list>
+    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="added create blog post functionality" />
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="Changes by Alina" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683267570579</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added create blog post functionality">
+      <created>1683268076165</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683268076165</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +282,7 @@
     <MESSAGE value="renamed files" />
     <MESSAGE value="Changes by Alina" />
     <MESSAGE value="renamed vars" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed vars" />
+    <MESSAGE value="added create blog post functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added create blog post functionality" />
   </component>
 </project>
