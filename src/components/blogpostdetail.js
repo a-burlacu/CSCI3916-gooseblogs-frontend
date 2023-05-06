@@ -6,6 +6,7 @@ import { BsStarFill } from 'react-icons/bs'
 import { Image } from 'react-bootstrap';
 
 class BlogpostDetail extends Component {
+
     constructor(props){
         super(props);
 
@@ -59,26 +60,31 @@ class BlogpostDetail extends Component {
 
         return (
             <Card>
-                <Card.Header>Blogpost Detail</Card.Header>
+                <Card.Header>{this.props.selectedBlogpost.title}</Card.Header>
                 <Card.Body>
                     <Image className="image" src={this.props.selectedBlogpost.imageUrl} thumbnail />
+                    <ListGroup>
+                        <ListGroupItem>{this.props.selectedBlogpost.postBody}</ListGroupItem>
+                    </ListGroup>
+
                 </Card.Body>
-                <ListGroup>
-                    <ListGroupItem>{this.props.selectedBlogpost.title}</ListGroupItem>
-                    <ListGroupItem>{this.props.selectedBlogpost.postBody}</ListGroupItem>
-                    {/*<ListGroupItem>*/}
-                    {/*    {this.props.selectedBlogpost?.actors?.map((actor, i) => {*/}
-                    {/*        console.log(actor);*/}
-                    {/*        return (<p key={i}>*/}
-                    {/*            <b>{actor.actorName}</b> {actor.charName}*/}
-                    {/*        </p>);*/}
-                    {/*    })}*/}
-                    {/*</ListGroupItem>*/}
-                    {/*<ListGroupItem><h4><BsStarFill/> {this.props.selectedBlogpost.avgRating}</h4></ListGroupItem>*/}
-                </ListGroup>
-                <Card.Body>
+                {/*<ListGroup>*/}
+                {/*    <ListGroupItem>{this.props.selectedBlogpost.title}</ListGroupItem>*/}
+                {/*    <ListGroupItem>{this.props.selectedBlogpost.postBody}</ListGroupItem>*/}
+                {/*    /!*<ListGroupItem>*!/*/}
+                {/*    /!*    {this.props.selectedBlogpost?.actors?.map((actor, i) => {*!/*/}
+                {/*    /!*        console.log(actor);*!/*/}
+                {/*    /!*        return (<p key={i}>*!/*/}
+                {/*    /!*            <b>{actor.actorName}</b> {actor.charName}*!/*/}
+                {/*    /!*        </p>);*!/*/}
+                {/*    /!*    })}*!/*/}
+                {/*    /!*</ListGroupItem>*!/*/}
+                {/*    /!*<ListGroupItem><h4><BsStarFill/> {this.props.selectedBlogpost.avgRating}</h4></ListGroupItem>*!/*/}
+                {/*</ListGroup>*/}
+                <Card.Body >
+                    <h5 className="comments">Comments:</h5>
                     {this.props.selectedBlogpost?.blogpostComments?.map((comment, i) =>
-                        <p key={i}>
+                        <p className="comments" key={i}>
                             <b>{comment.username}</b>&nbsp; {comment.quote}
                             {/*&nbsp;  <BsStarFill /> {comment.rating}*/}
                         </p>
@@ -105,7 +111,7 @@ class BlogpostDetail extends Component {
                         {console.log("username", this.state.details.username)}
                         {console.log("quote", this.state.details.quote)}
 
-                        <Button onClick={this.submit}>Submit</Button>
+                        <Button className="submit-button" onClick={this.submit}>Submit</Button>
                     </Form>
                 </Card.Body>
             </Card>

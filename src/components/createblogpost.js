@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {createBlogpost} from "../actions/blogpostActions";
+import {createBlogpost, fetchBlogpost, setBlogpost} from "../actions/blogpostActions";
 import {connect} from 'react-redux';
 import {Form, Button } from 'react-bootstrap';
+import redirect from "react-router-dom/es/Redirect";
+import {LinkContainer} from "react-router-bootstrap";
 ;
 class CreateBlogpost extends Component {
 
@@ -41,23 +43,27 @@ class CreateBlogpost extends Component {
         const {dispatch} = this.props;
         dispatch(createBlogpost(this.state.details));
     }
-
+    handleClick = (blogpost) => {
+        const {dispatch} = this.props;
+        dispatch(fetchBlogpost(blogpost));
+    }
     render() {
 
         return (
-            <Form className='form-horizontal'>
+            <Form className='form-create'>
+                <h1>Create New Post</h1>
                 <Form.Group controlId="title">
-                    <Form.Label>Title:</Form.Label>
+                    <Form.Label className='label-create'>Title:</Form.Label>
                     <Form.Control onChange={this.updateDetails} value={this.state.details.title} type="text"
                                   placeholder="Enter title"/>
                 </Form.Group>
                 <Form.Group controlId="postBody">
-                    <Form.Label>Body:</Form.Label>
+                    <Form.Label className='label-create'>Body:</Form.Label>
                     <Form.Control onChange={this.updateDetails} value={this.state.details.postBody} type="text"
                                   placeholder="Write post"/>
                 </Form.Group>
                 <Form.Group controlId="imageUrl">
-                    <Form.Label>Enter Image URL:</Form.Label>
+                    <Form.Label className='label-create'>Enter Image URL:</Form.Label>
                     <Form.Control onChange={this.updateDetails} value={this.state.details.imageUrl} type="text"
                                   placeholder="Enter URL"/>
                 </Form.Group>
@@ -67,7 +73,10 @@ class CreateBlogpost extends Component {
                 {console.log("postBody", this.state.details.postBody)}
                 {console.log("imageUrl", this.state.details.imageUrl)}
 
-                <Button onClick={this.submit}>Create Post</Button>
+                <LinkContainer to={'/blogpost/'+this.state.details.title} onClick={()=>this.handleClick(this.state.details.title)}>
+                    <Button className="create-button" onClick={this.submit}>Create Post</Button>
+                </LinkContainer>
+
             </Form>
         )
 

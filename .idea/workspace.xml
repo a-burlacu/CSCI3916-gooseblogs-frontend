@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="added create blog post functionality" />
+    <list default="true" id="18888df1-c9f6-4d39-8ae5-81cd8885422c" name="Changes" comment="added create blog post functionality">
+      <change afterPath="$PROJECT_DIR$/src/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/actions/authActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/actions/blogpostActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/authentication.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/blogpost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/blogpostdetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/blogpostheader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/blogpostlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/createblogpost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/components/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/constants/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/reducers/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/reducers/blogpostReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/stores/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blogpostdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogpostdetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blogpostlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blogpostlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/createblogpost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/createblogpost.js" afterDir="false" />
+    </list>
     <list id="46bc43cd-5d11-42ac-b65b-677082821309" name="Changes by Alina" comment="Changes by Alina" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +74,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="B:\Documents\CODE\CSCI3916-gooseblogs-frontend\src" />
+      <recent name="B:\Documents\CODE\CSCI3916-gooseblogs-frontend" />
+      <recent name="B:\Documents\CODE\CSCI3916-gooseblogs-frontend\src\components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="updated variable names to 'blogpost'">
@@ -69,6 +105,7 @@
       <updated>1683138241709</updated>
       <workItem from="1683138242964" duration="1712000" />
       <workItem from="1683225935114" duration="12588000" />
+      <workItem from="1683315394523" duration="2120000" />
     </task>
     <task id="LOCAL-00003" summary="uppdated login/register">
       <created>1683140748162</created>
@@ -252,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683268076165</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added create blog post functionality">
+      <created>1683268914086</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1683268914087</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

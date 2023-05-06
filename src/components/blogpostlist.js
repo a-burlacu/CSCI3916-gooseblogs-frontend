@@ -35,16 +35,16 @@ class BlogpostList extends Component {
             }
 
             return (
-                <Carousel onSelect={this.handleSelect}>
+                <Carousel onSelect={this.handleSelect} >
                     {blogpostList.map((blogpost) =>
                         <Carousel.Item key={blogpost.title}>
                             <div>
                                 <LinkContainer to={'/blogpost/'+blogpost.title} onClick={()=>this.handleClick(blogpost)}>
-                                    <Nav.Link><Image className="image" src={blogpost.imageUrl} thumbnail /></Nav.Link>
+                                    <Nav.Link><Image className="image" src={blogpost.imageUrl} thumbnail/></Nav.Link>
                                 </LinkContainer>
                             </div>
                             <Carousel.Caption>
-                                <h3>{blogpost.title}</h3>
+                                <h3>{blogpost.title}</h3> &nbsp;&nbsp; <p>Author: {blogpost.username}</p>
                                 {/*<BsStarFill glyph={'star'} /> {blogpost.avgRating} &nbsp;&nbsp; {blogpost.releaseDate}*/}
                             </Carousel.Caption>
                         </Carousel.Item>

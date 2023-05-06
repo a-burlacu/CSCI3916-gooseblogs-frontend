@@ -16,13 +16,13 @@
 
 .App-header {
   background-color: #24292e;
-  height: 150px;
-  padding: 20px;
+  height: 200px;
+  padding: 50px;
   color: #f392aa;
 }
 
 .App-title {
-  font-size: 2.0em;
+  font-size: 3.0em;
 }
 
 .App-intro {
@@ -45,4 +45,111 @@
   to {
     transform: rotate(360deg);
   }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  resize: inline;
+}
+/*.carousel .carousel-indicators li {*/
+/*  position: inherit;*/
+/*  width: 10px;*/
+/*  height: 10px;*/
+/*  border-radius: 100%;*/
+/*  background-color: #000000;*/
+/*}*/
+.carousel .carousel-indicators li {
+  background-color: #24292e;
+  position: relative;
+  top: 20pt;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel .carousel-indicators li.active {
+  background-color: #000000;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #24292e;
+}
+
+.card-header {
+  font-size: 2.0em;
+  font-weight: bolder;
+  background-color: #f392aa;
+}
+
+.card-body {
+  font-size: 1.2em;
+}
+
+.image {
+  max-height: 500px;
+}
+
+.form-horizontal {
+  text-align: left;
+  position: relative;
+}
+
+.form-create {
+
+  text-align: left;
+  position: relative;
+  left: 350pt;
+  top: 100pt;
+  max-width: 50%;
+}
+.label-create {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
+.create-button {
+  background-color: #24292e;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.submit-button {
+  background-color: #f392aa;
+  border-color: #24292e;
+  border-width: 2px;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #24292e;
+}
+
+.btn:visited .btn:hover, .btn:active {
+  outline: none;
+  background-color: #f392aa;
+  border-color: #24292e;
+  border-width: 2px;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #24292e;
+}
+
+
+
+
+.active{
+  background-color: #f392aa;
+}
+
+.comments{
+  text-align: left;
+  position: relative;
+  top: 0pt;
+  left: 350pt;
+  bottom: 30pt;
 }
