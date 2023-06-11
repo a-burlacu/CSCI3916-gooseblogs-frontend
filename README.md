@@ -1,7 +1,9 @@
 
 <p align="left">
   <h3> Visit Site:  </h3> 
-  <img width="600" src="public/GooseBlogs.png" alt="GooseBlogs" href="https://csci3916-gooseblogs-frontend.onrender.com">
+  <a  href="https://csci3916-gooseblogs-frontend.onrender.com">
+    <img width="600" src="public/GooseBlogs.png" alt="GooseBlogs">
+  </a>
 </p>
 
 GooseBlogs is a full-stack MERN web application that includes:
